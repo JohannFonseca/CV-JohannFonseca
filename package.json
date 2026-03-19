@@ -1,0 +1,24 @@
+{
+  "name": "cv-johannfonseca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohannFonseca/CV-JohannFonseca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JohannFonseca/CV-JohannFonseca/issues"
+  },
+  "homepage": "https://github.com/JohannFonseca/CV-JohannFonseca#readme",
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
