@@ -1,0 +1,85 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ENCABEZADO */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* LISTAS */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* GRID PARA HABILIDADES */
+.grid {
+    display: flex;
+    gap: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+/* PRINT (PARA PDF) */
+@media print {
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+    }
+}
