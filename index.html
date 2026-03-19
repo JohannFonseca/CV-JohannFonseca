@@ -2,74 +2,103 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <title>CV - Johann Fonseca</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="container">
+<main class="container">
 
-    <!-- parte de arriba -->
-    <header>
+    <!-- HEADER: Información principal -->
+    <header class="header">
         <h1>Johann Fonseca Espinoza</h1>
-        <p>8580-3868</p>
-        <p>arielfonseca049@gmail.com</p>
-        <p>https://www.linkedin.com/in/johann-fonseca-0a89a4323/</p>
+        
+        <!-- Uso de nav para enlaces de contacto -->
+        <nav class="contact">
+            <a href="tel:85803868">8580-3868</a>
+            <a href="mailto:arielfonseca049@gmail.com">arielfonseca049@gmail.com</a>
+            <a href="https://www.linkedin.com/in/johann-fonseca-0a89a4323/" target="_blank">
+                LinkedIn
+            </a>
+        </nav>
     </header>
 
-    <!-- informacion personal -->
+    <!-- el perfil -->
     <section>
         <h2>Perfil Profesional</h2>
         <p>
-            Estudiante de Informática Empresarial en la Universidad de Costa Rica,
-            con interés en desarrollo de software, gestión de proyectos y soluciones tecnológicas innovadoras.
+            Estudiante de Informática Empresarial con enfoque en desarrollo de software,
+            gestión de proyectos y creación de soluciones tecnológicas eficientes.
+            Interesado en aportar valor a través de innovación y buenas prácticas.
         </p>
     </section>
 
-    <!-- eduacion -->
+    <!-- educacion -->
     <section>
         <h2>Educación</h2>
-        <h3>Universidad de Costa Rica</h3>
-        <p>Bachillerato en Informática Empresarial</p>
-        <p>2023 – Actualidad</p>
-        <h3>Colegio Tecnico Profesional de Hojancha</h3>
-        <p>Tecnico en Informatica Empresarial</p>
-        <p>2013 – 2022</p>
+
+        <article class="item">
+            <div class="item-header">
+                <h3>Universidad de Costa Rica</h3>
+                <span>2023 – Actualidad</span>
+            </div>
+            <p>Bachillerato en Informática Empresarial</p>
+        </article>
+
+        <article class="item">
+            <div class="item-header">
+                <h3>Colegio Técnico Profesional de Hojancha</h3>
+                <span>2013 – 2022</span>
+            </div>
+            <p>Técnico en Informática Empresarial</p>
+        </article>
     </section>
 
- <!-- experiencia -->
-<section>
-    <h2>Experiencia</h2>
+    <!-- experiencia -->
+    <section>
+        <h2>Experiencia</h2>
 
-    <h3>Proyectos Web Universitarios</h3>
-    <p>2024 - Actualidad</p>
-    <ul>
-        <li>Desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript</li>
-        <li>Diseño de interfaces responsivas e interactivas centradas en el usuario</li>
-        <li>Implementación de buenas prácticas de desarrollo y estructura de código</li>
-        <li>Trabajo colaborativo bajo metodologías ágiles</li>
-    </ul>
+        <article class="item">
+            <div class="item-header">
+                <h3>Proyectos Web Universitarios</h3>
+                <span>2024 – Actualidad</span>
+            </div>
+            <ul>
+                <li>Desarrollo de aplicaciones web con HTML, CSS y JavaScript</li>
+                <li>Diseño de interfaces responsivas centradas en el usuario</li>
+                <li>Aplicación de buenas prácticas de desarrollo</li>
+                <li>Trabajo en equipo bajo metodologías ágiles</li>
+            </ul>
+        </article>
 
-    <h3>Gerente - Librería</h3>
-    <p>2025 - Actualidad</p>
-    <ul>
-        <li>Gestión y control de inventarios para optimizar la disponibilidad de productos</li>
-        <li>Atención al cliente enfocada en mejorar la experiencia y fidelización</li>
-        <li>Coordinación y supervisión del equipo de trabajo</li>
-        <li>Organización de procesos operativos para mejorar la eficiencia del negocio</li>
-    </ul>
-
-</section>
+        <article class="item">
+            <div class="item-header">
+                <h3>Gerente - Librería</h3>
+                <span>2025 – Actualidad</span>
+            </div>
+            <ul>
+                <li>Gestión de inventarios y optimización de stock</li>
+                <li>Mejora de la experiencia del cliente</li>
+                <li>Supervisión de equipo de trabajo</li>
+                <li>Optimización de procesos operativos</li>
+            </ul>
+        </article>
+    </section>
 
     <!-- habilidades -->
-    <section class="grid">
+    <section class="skills">
         <div>
             <h2>Habilidades Técnicas</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
                 <li>Bases de datos</li>
-                <li>Git / GitHub</li>
-                <li> Diferentes bases de datos</li>
+                <li>Git & GitHub</li>
             </ul>
         </div>
 
@@ -86,12 +115,14 @@
     <!-- idiomas -->
     <section>
         <h2>Idiomas</h2>
-        <p>Español: Nativo</p>
-        <p>Inglés: Intermedio</p>
-        <p>Italiano: Intermedio</p>
+        <ul class="languages">
+            <li><strong>Español:</strong> Nativo</li>
+            <li><strong>Inglés:</strong> Intermedio</li>
+            <li><strong>Italiano:</strong> Intermedio</li>
+        </ul>
     </section>
 
-</div>
+</main>
 
 </body>
 </html>
