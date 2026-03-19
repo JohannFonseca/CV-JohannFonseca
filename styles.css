@@ -1,4 +1,4 @@
-/* RESET BÁSICO */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     color: #333;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -22,7 +21,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* ENCABEZADO */
+/* encabezado */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -33,7 +32,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* SECCIONES */
+/* secciones */
 section {
     margin-bottom: 25px;
 }
@@ -69,17 +68,5 @@ li {
 @media (max-width: 600px) {
     .grid {
         flex-direction: column;
-    }
-}
-
-/* PRINT (PARA PDF) */
-@media print {
-    body {
-        background: white;
-    }
-
-    .container {
-        box-shadow: none;
-        margin: 0;
     }
 }
